@@ -1,0 +1,343 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        @font-face {
+            font-family: 'BebasNeue';
+            src: url('font/BebasNeue-Regular.woff2') format('woff2');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix{clear:both;}
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.42857143;
+            font-size: 14px;
+            color: #000000;
+            background: #ffffff;
+            position: relative;
+            overflow-x: hidden;
+            overflow-y: auto;
+            font-weight: 300;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            
+            width: 100%;
+            background-color:white;
+        }
+        .container_1{padding:20px 0px;}
+        .img_logo{max-height:37px;
+
+        }
+        .dangnhap {
+            margin: 10px;
+        }
+        .dangnhap_a {
+            color: #191919;
+            border: 1px solid #e5e5e5;
+            padding: 10px 35px;
+            text-decoration: none;
+            font-size: 12px;
+            font-family: system-ui;
+        }
+        .dangnhap_a:hover{
+            border:1px solid #aea9a9;
+        }
+        .sec_1 {
+            padding-top: 100px;
+            background: #f5f5f5;
+            max-height:600px;
+            padding-bottom:200px;        }
+        .content {
+            margin: 0 auto;
+            max-width: 500px;
+           
+        }
+        .covn {
+            content:"";
+            background-image: url(Images/icon_vn.png);
+        
+        }
+        .button1 {
+            
+            background: none;
+            border: none;
+            height: 40px;
+        }
+        .input1 {
+            border: none;
+            height: 40px;
+            min-width: 64%;
+            
+            margin-left: 20%;
+        }
+        .row1{background-color:white;
+              margin:0;
+        }
+        .row2 {
+            margin: 0;
+            text-align: center;
+            margin-top: 50px;
+            color: #999;
+            border: 1px solid #e5e5e5;
+            font-family: monospace;
+        
+        }
+        .iconco{height:24px;}
+        .span1 {
+            float: right;
+            margin-top: 10px;
+        }
+        .a1 {
+            color: black;
+            font-weight: 700;
+            font-style: oblique;
+        }
+        .p1 {
+            margin-top: 50px;
+            margin-bottom:20px;
+
+        }
+        .button2 {
+            width: 30%;
+            height: 40px;
+            border: none;
+            float: right;
+            font-family: monospace;
+        }
+        .but_black {
+            margin-left: 110px;
+            background-color:black;
+            color:white;
+        }
+        .margin {
+            margin: 0;
+        }
+        .footer {
+            padding-top: 100px;
+            padding-bottom: 20px;
+            background-color: #000000;
+            color:white;
+        }
+        .end li{list-style:none;
+
+        }
+        .end li a {
+                color: white;
+                text-decoration: none;
+               
+            }
+        .font_end {
+            font-size:13px
+        }
+        .house {
+            font-family: 'BebasNeue';
+            font-size: 32px;
+            width: 70px;
+        }
+        .bo {
+            max-width: 78%;
+        }
+        .end1 {
+            margin-top: 40px;
+            padding-top: 20px;
+            
+        }
+        .end_ {
+            display: inline-block;
+            padding: 5px 20px;
+            border-right: 1px solid;
+        }
+        .end_2 {
+            padding-left: 20px;
+            display: inline-block;
+        }
+        .end_3 {
+            font-family: 'BebasNeue';
+            font-size: 16px;
+        }
+        .timkiem {
+            margin-left: 5px;
+            padding-top: 20px;
+            color: white;
+        }
+        .dow:hover{cursor:pointer}
+        .dow{position:relative}
+        .no {
+            position: absolute;
+            display: none;
+            background-color: white;
+            padding: 10px;
+            right:10%;
+
+            
+        }
+        .left{display:flex;
+             
+        }
+        .srearch {
+            height: 0;
+            right: 21px;
+            border: none;
+            background: white;
+            position: absolute;
+            top: 20px;
+            font-size: 12px;
+        }
+        .black{color:black}
+        .img{max-width:200%}
+        .img_1 {
+            height: 40px;
+            border: 1px solid white;
+            border-radius: 12px;
+        }
+        .icon_fb_int {
+            color: white;
+            font-size: 35px;
+            padding-right: 20px;
+        }
+        .fb_int {
+            margin-top:50px;
+        }
+        .span2 {
+            width: 14%;
+            font-size: 10px;
+            float: right;
+            color: white;
+            font-weight: bold;
+        }
+        h5 {
+            font-size: 17px;
+            font-family: system-ui;
+            color: #ea8025;
+        }
+        .h5_1 {
+            width: 160px;
+            height: 150px;
+        }
+        .pad {
+            padding: 0;
+            margin: 10px 0px;
+        }
+        .p_end {
+            color: #212529;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container container_1">
+            <div class="nav navbar-nav">
+                <a href="#"><img class="img_logo" src="Images/dangnhap_logo.png" /></a>
+            </div>
+            <div class="navbar-right dangnhap">
+                <a class="dangnhap_a" href="#">ĐĂNG NHẬP</a>
+            </div>
+        </div>
+    </header>
+    <section class="sec_1">
+        <div class="content">
+            <h3>Đăng Nhập</h3>
+            <div class="row row1">
+                <div class="col-lg-12">
+                    
+                    <button class="button1" type="button">
+                        <span><img class="iconco" src="Images/icon_vn.png" /></span>
+                        <span>+84</span>
+                    </button>
+
+                    <input class="input1" type="text" placeholder="Nhập số điện thoại của bạn" />
+                </div>
+            </div>
+            <div class="row row2">
+                <button class="button1">ĐĂNG NHẬP</button>
+            </div>
+            <span class="span1"><a class="a1" href="#">Đăng kí thành viên mới ?</a></span>
+            <p class="p1"> hoặc đăng nhập bằng </p>
+            <div class="row margin">
+                <button class="button2 but_black">EMAIL</button>
+                <button class="button2 ">FACEBOOK</button>
+            </div>
+        </div>
+
+    </section>
+    <div class="clearfix"></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-xs-3">
+                    <div class="house">
+                        <img class="img" src="Images/logo_footer_d.png" />
+
+                    </div>
+                    <div class="fb_int">
+                        <a href="#"><i class="fab fa-facebook icon_fb_int"></i></a>
+                        <a href="#"><i class="fab fa-instagram icon_fb_int"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-3">
+                   
+                        <h5 class="h5_1">
+                            VỀ CHÚNG TÔI
+                            <span class="span2">CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ TRÀ CÀ PHÊ VN</span>
+
+                        </h5>
+                    
+                        <ul class="end">
+                            <li><a class="font_end" href="#">Điều khoản và điều kiện</a></li>
+                            <li><a class="font_end" href="#">Chính sách bảo mật</a></li>
+                            <li><a class="font_end" href="#"><img class="bo" src="Images/bocongthuong.webp" /></a></li>
+
+                        </ul>
+                    
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-3">
+                    <h5>ỨNG DỤNG THE COFFEE HOUSE</h5>
+                    <div class="col-lg-12 pad">
+                        <a href="#">
+                            <img class="img_1" src="Images/appstore.png" />
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pad">
+                        <a href="#">
+                            <img class="img_1" src="Images/ggplay.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-3">
+                    <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+                    <ul class="end">
+                        <li><a class="font_end" href="#">Delivery: 1800 6936</a></li>
+                        <li><a class="font_end" href="#">Hotline: 02871 087 088</a></li>
+                        <li><a class="font_end" href="#">Địa chỉ: Lầu 7, 62 Trần Quang Khải, phường Tân Định, quận 1, HCMC</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="row end1">
+                <p class="p_end">© 2018 CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ TRÀ CÀ PHÊ VN</p>
+                <p class="p_end">86-88 Cao Thắng, phường 4, quận 3, Hồ Chí Minh</p>
+                <p class="p_end">Số giấy phép ĐKKD: 0312867172 do sở kế hoạch đầu tư TPHCM ngày 23/07/2014</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
